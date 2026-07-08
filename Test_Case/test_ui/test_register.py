@@ -1,5 +1,5 @@
 import random
-from playwright.sync_api import Page
+from playwright.sync_api import Page, expect
 from PageObjects.Registeration_Page import RegistrationPage
 from Utilities.Read_Env import ReadEnv
 
@@ -12,9 +12,9 @@ class TestRegistrations:
         page: Page = page
         
         #random email
-        #random_id = random.randint(1000, 9999)
-        #test_email = f"bimalesh_auto_{random_id}@gmail.com"
-        test_email = ReadEnv.get_email()
+        random_id = random.randint(1000, 9999)
+        test_email = f"bimalesh_auto_{random_id}@gmail.com"
+        #test_email = ReadEnv.get_email()
         test_password = ReadEnv.get_password()
         test_name = "bimalesh"
 
@@ -41,4 +41,15 @@ class TestRegistrations:
             mobile="9876543210"
         )
         logger.info("******** Registration Form Submitted Successfully ********")
+        logger.info(" ********* Now Verifying Sucess Message *************")
+
+        sucess_heading = register.verify_account_creation_heading()
+        expect(sucess_heading).to_be_visible
+        logger.info("Assertion Passed: 'ACCOUNT CREATED!' message is visible on screen.")
+
+        register.click_continue()
+        logger.info("******** Registration Flow Completed Successfully! ********")
+
+
+
 

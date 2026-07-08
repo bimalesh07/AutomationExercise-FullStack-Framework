@@ -34,6 +34,10 @@ class RegistrationPage:
         self.mobile_input = 'input[id="mobile_number"]'
         self.create_account_button = 'button[data-qa="create-account"]'
 
+        #assertion locaters
+        self.account_created_heading = 'h2[data-qa="account-created"]'
+        self.continue_button = 'a[data-qa="continue-button"]'
+
     def navigate_to_signup(self):
         self.logger.info("Navigate to initial signup page")
         self.page.click(self.signup_login_link)
@@ -71,8 +75,17 @@ class RegistrationPage:
         self.page.fill(self.city_input, city)
         self.page.fill(self.zipcode_input, zipcode)
         self.page.fill(self.mobile_input, mobile)
-        
         self.page.click(self.create_account_button)
+
+
+    def verify_account_creation_heading(self):
+        self.logger.info("Getting the account created heading locators")
+        return self.page.locator(self.account_created_heading)
+
+
+    def click_continue(self):
+        self.logger.info("Clicking on Continue button after registration")
+        self.page.click(self.continue_button)
 
 
 

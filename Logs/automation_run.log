@@ -49,3 +49,56 @@
 2026-07-08 16:52:44 - [INFO] - Filling detailed form with data passed from Test File...
 2026-07-08 16:52:45 - [INFO] - ******** Registration Form Submitted Successfully ********
 2026-07-08 16:52:45 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 23:53:08 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 23:53:17 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 23:53:17 - [INFO] - Navigate to initial signup page
+2026-07-08 23:53:18 - [INFO] - Submitting initial signup for Name: bimalesh, Email: bimalesh_auto_5448@gmail.com
+2026-07-08 23:53:18 - [INFO] - Filling detailed form with data passed from Test File...
+2026-07-08 23:53:19 - [INFO] - ******** Registration Form Submitted Successfully ********
+2026-07-08 23:53:19 - [INFO] -  ********* Now Verifying Sucess Message *************
+2026-07-08 23:53:19 - [INFO] - Getting the account created heading locators
+2026-07-08 23:53:19 - [INFO] - Assertion Passed: 'ACCOUNT CREATED!' message is visible on screen.
+2026-07-08 23:53:19 - [INFO] - Clicking on Continue button after registration
+2026-07-08 23:53:20 - [INFO] - ******** Registration Flow Completed Successfully! ********
+2026-07-08 23:53:20 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 00:20:32 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:20:33 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 00:20:35 - [INFO] - API Response Status Code: 200
+2026-07-09 00:20:35 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:22:31 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:22:32 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 00:22:33 - [INFO] - API Response Status Code: 200
+2026-07-09 00:22:33 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:25:31 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:25:32 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 00:25:33 - [INFO] - API Response Status Code: 200
+2026-07-09 00:25:33 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:26:58 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:26:59 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 00:27:00 - [INFO] - API Response Status Code: 403
+2026-07-09 00:27:00 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:29:22 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:29:22 - [INFO] - --- Sending POST Request to Create User Account ---
+2026-07-09 00:29:22 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:29:28 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:29:29 - [INFO] - --- Sending POST Request to Create User Account ---
+2026-07-09 00:29:29 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:29:35 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:29:35 - [INFO] - --- Sending POST Request to Create User Account ---
+2026-07-09 00:29:35 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:31:03 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:31:04 - [INFO] - --- Sending POST Request to Create User Account ---
+2026-07-09 00:31:05 - [INFO] - API Response Status Code: 200
+2026-07-09 00:31:05 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:31:22 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:31:22 - [INFO] - --- Sending POST Request to Create User Account ---
+2026-07-09 00:31:24 - [INFO] - API Response Status Code: 200
+2026-07-09 00:31:24 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:31:48 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:31:49 - [INFO] - --- Sending POST Request to Create User Account ---
+2026-07-09 00:31:50 - [INFO] - API Response Status Code: 200
+2026-07-09 00:31:50 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 00:32:49 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
+2026-07-09 00:32:49 - [INFO] - --- Sending POST Request to Create User Account ---
+2026-07-09 00:32:51 - [INFO] - API Response Status Code: 200
+2026-07-09 00:32:51 - [INFO] - [API FIXTURE] Tearing down Backend API Context
