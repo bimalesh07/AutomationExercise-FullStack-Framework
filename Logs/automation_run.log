@@ -1,0 +1,51 @@
+2026-07-08 15:17:23 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 15:17:51 - [INFO] - ********Start Registrations test flow ********
+2026-07-08 15:17:51 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 15:25:49 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 15:25:54 - [INFO] - ********Start Registrations test flow ********
+2026-07-08 15:25:54 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 15:38:59 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 15:39:08 - [INFO] - ********Start Registrations test flow ********
+2026-07-08 15:39:08 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 15:42:31 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 15:42:45 - [INFO] - ********Start Registrations test flow ********
+2026-07-08 15:42:45 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 16:33:48 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 16:33:57 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 16:33:57 - [INFO] - Navigate to initial signup page
+2026-07-08 16:33:58 - [INFO] - Submitting initial signup for Name: bimalesh, Email: bimalesh_auto_7074@gmail.com
+2026-07-08 16:33:58 - [INFO] - Filling detailed form with data passed from Test File...
+2026-07-08 16:33:59 - [INFO] - ******** Registration Form Submitted Successfully ********
+2026-07-08 16:33:59 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 16:46:24 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 16:46:32 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 16:46:32 - [INFO] - Navigate to initial signup page
+2026-07-08 16:46:33 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
+2026-07-08 16:46:33 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 16:46:58 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 16:47:04 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 16:47:04 - [INFO] - Navigate to initial signup page
+2026-07-08 16:47:04 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
+2026-07-08 16:47:05 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 16:47:11 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 16:47:15 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 16:47:15 - [INFO] - Navigate to initial signup page
+2026-07-08 16:47:15 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
+2026-07-08 16:47:16 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 16:50:24 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 16:50:28 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 16:50:28 - [INFO] - Navigate to initial signup page
+2026-07-08 16:50:29 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
+2026-07-08 16:50:29 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 16:50:37 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 16:50:42 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 16:50:42 - [INFO] - Navigate to initial signup page
+2026-07-08 16:50:43 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
+2026-07-08 16:50:44 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
+2026-07-08 16:52:38 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
+2026-07-08 16:52:43 - [INFO] - ******** Start Registrations test flow ********
+2026-07-08 16:52:43 - [INFO] - Navigate to initial signup page
+2026-07-08 16:52:43 - [INFO] - Submitting initial signup for Name: bimalesh, Email: bimlaesh@gmail.com
+2026-07-08 16:52:44 - [INFO] - Filling detailed form with data passed from Test File...
+2026-07-08 16:52:45 - [INFO] - ******** Registration Form Submitted Successfully ********
+2026-07-08 16:52:45 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
