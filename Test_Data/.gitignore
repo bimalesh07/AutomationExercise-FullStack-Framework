@@ -11,9 +11,13 @@ ENV/
 Reports/
 *.html
 
+# Ignore all screenshots
+Screenshots/
+
 # Ignore application and test runtime logs
 Logs/
 *.log
+
 
 #Ignore Python cache and compilation files
 __pycache__/
