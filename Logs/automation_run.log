@@ -1,111 +1,62 @@
-2026-07-08 15:17:23 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 15:17:51 - [INFO] - ********Start Registrations test flow ********
-2026-07-08 15:17:51 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 15:25:49 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 15:25:54 - [INFO] - ********Start Registrations test flow ********
-2026-07-08 15:25:54 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 15:38:59 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 15:39:08 - [INFO] - ********Start Registrations test flow ********
-2026-07-08 15:39:08 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 15:42:31 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 15:42:45 - [INFO] - ********Start Registrations test flow ********
-2026-07-08 15:42:45 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 16:33:48 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 16:33:57 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 16:33:57 - [INFO] - Navigate to initial signup page
-2026-07-08 16:33:58 - [INFO] - Submitting initial signup for Name: bimalesh, Email: bimalesh_auto_7074@gmail.com
-2026-07-08 16:33:58 - [INFO] - Filling detailed form with data passed from Test File...
-2026-07-08 16:33:59 - [INFO] - ******** Registration Form Submitted Successfully ********
-2026-07-08 16:33:59 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 16:46:24 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 16:46:32 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 16:46:32 - [INFO] - Navigate to initial signup page
-2026-07-08 16:46:33 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
-2026-07-08 16:46:33 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 16:46:58 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 16:47:04 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 16:47:04 - [INFO] - Navigate to initial signup page
-2026-07-08 16:47:04 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
-2026-07-08 16:47:05 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 16:47:11 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 16:47:15 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 16:47:15 - [INFO] - Navigate to initial signup page
-2026-07-08 16:47:15 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
-2026-07-08 16:47:16 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 16:50:24 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 16:50:28 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 16:50:28 - [INFO] - Navigate to initial signup page
-2026-07-08 16:50:29 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
-2026-07-08 16:50:29 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 16:50:37 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 16:50:42 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 16:50:42 - [INFO] - Navigate to initial signup page
-2026-07-08 16:50:43 - [INFO] - Submitting initial signup for Name: bimalesh, Email: None
-2026-07-08 16:50:44 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 16:52:38 - [INFO] - [FUNCTION FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 16:52:43 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 16:52:43 - [INFO] - Navigate to initial signup page
-2026-07-08 16:52:43 - [INFO] - Submitting initial signup for Name: bimalesh, Email: bimlaesh@gmail.com
-2026-07-08 16:52:44 - [INFO] - Filling detailed form with data passed from Test File...
-2026-07-08 16:52:45 - [INFO] - ******** Registration Form Submitted Successfully ********
-2026-07-08 16:52:45 - [INFO] - [FUNCTION FIXTURE] Closing Browser Tab and Clearing State
-2026-07-08 23:53:08 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
-2026-07-08 23:53:17 - [INFO] - ******** Start Registrations test flow ********
-2026-07-08 23:53:17 - [INFO] - Navigate to initial signup page
-2026-07-08 23:53:18 - [INFO] - Submitting initial signup for Name: bimalesh, Email: bimalesh_auto_5448@gmail.com
-2026-07-08 23:53:18 - [INFO] - Filling detailed form with data passed from Test File...
-2026-07-08 23:53:19 - [INFO] - ******** Registration Form Submitted Successfully ********
-2026-07-08 23:53:19 - [INFO] -  ********* Now Verifying Sucess Message *************
-2026-07-08 23:53:19 - [INFO] - Getting the account created heading locators
-2026-07-08 23:53:19 - [INFO] - Assertion Passed: 'ACCOUNT CREATED!' message is visible on screen.
-2026-07-08 23:53:19 - [INFO] - Clicking on Continue button after registration
-2026-07-08 23:53:20 - [INFO] - ******** Registration Flow Completed Successfully! ********
-2026-07-08 23:53:20 - [INFO] - [UI FIXTURE] Closing Browser Tab
-2026-07-09 00:20:32 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:20:33 - [INFO] - Sending POST Request to Create User Account ---
-2026-07-09 00:20:35 - [INFO] - API Response Status Code: 200
-2026-07-09 00:20:35 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:22:31 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:22:32 - [INFO] - Sending POST Request to Create User Account ---
-2026-07-09 00:22:33 - [INFO] - API Response Status Code: 200
-2026-07-09 00:22:33 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:25:31 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:25:32 - [INFO] - Sending POST Request to Create User Account ---
-2026-07-09 00:25:33 - [INFO] - API Response Status Code: 200
-2026-07-09 00:25:33 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:26:58 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:26:59 - [INFO] - Sending POST Request to Create User Account ---
-2026-07-09 00:27:00 - [INFO] - API Response Status Code: 403
-2026-07-09 00:27:00 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:29:22 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:29:22 - [INFO] - --- Sending POST Request to Create User Account ---
-2026-07-09 00:29:22 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:29:28 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:29:29 - [INFO] - --- Sending POST Request to Create User Account ---
-2026-07-09 00:29:29 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:29:35 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:29:35 - [INFO] - --- Sending POST Request to Create User Account ---
-2026-07-09 00:29:35 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:31:03 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:31:04 - [INFO] - --- Sending POST Request to Create User Account ---
-2026-07-09 00:31:05 - [INFO] - API Response Status Code: 200
-2026-07-09 00:31:05 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:31:22 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:31:22 - [INFO] - --- Sending POST Request to Create User Account ---
-2026-07-09 00:31:24 - [INFO] - API Response Status Code: 200
-2026-07-09 00:31:24 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:31:48 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:31:49 - [INFO] - --- Sending POST Request to Create User Account ---
-2026-07-09 00:31:50 - [INFO] - API Response Status Code: 200
-2026-07-09 00:31:50 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 00:32:49 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 00:32:49 - [INFO] - --- Sending POST Request to Create User Account ---
-2026-07-09 00:32:51 - [INFO] - API Response Status Code: 200
-2026-07-09 00:32:51 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 11:38:29 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 11:38:34 - [INFO] - Sending POST Request to Create User Account ---
-2026-07-09 11:38:34 - [INFO] - [API FIXTURE] Tearing down Backend API Context
-2026-07-09 11:39:01 - [INFO] - [API FIXTURE] Spawning Backend API Request Client Context
-2026-07-09 11:39:01 - [INFO] - Sending POST Request to Create User Account ---
-2026-07-09 11:39:03 - [INFO] - API Response Status Code: 200
-2026-07-09 11:39:03 - [INFO] - [API FIXTURE] Tearing down Backend API Context
+2026-07-09 12:20:38 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:20:43 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:20:45 - [INFO] - API Response Status Code: 200
+2026-07-09 12:20:45 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:21:50 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:21:50 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:21:53 - [INFO] - API Response Status Code: 200
+2026-07-09 12:21:53 - [INFO] - -------Sending Get Request For user:bimalesh_api_8145@gmail.com
+2026-07-09 12:21:54 - [INFO] - API Response Status code:200
+2026-07-09 12:21:54 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:22:07 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:22:07 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:22:10 - [INFO] - API Response Status Code: 200
+2026-07-09 12:22:10 - [INFO] - -------Sending Get Request For user:bimalesh_api_8688@gmail.com
+2026-07-09 12:22:11 - [INFO] - API Response Status code:200
+2026-07-09 12:22:11 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:23:04 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:23:04 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:23:06 - [INFO] - API Response Status Code: 200
+2026-07-09 12:23:06 - [INFO] - -------Sending Get Request For user:bimalesh_api_3527@gmail.com
+2026-07-09 12:23:07 - [INFO] - API Response Status code:503
+2026-07-09 12:23:07 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:23:28 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:23:28 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:23:29 - [INFO] - API Response Status Code: 503
+2026-07-09 12:23:29 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:24:39 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:24:40 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:24:41 - [INFO] - API Response Status Code: 200
+2026-07-09 12:24:41 - [INFO] - -------Sending Get Request For user:bimalesh_api_6706@gmail.com
+2026-07-09 12:24:42 - [INFO] - API Response Status code:200
+2026-07-09 12:24:42 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:25:51 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:25:52 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:25:52 - [INFO] - API Response Status Code: 200
+2026-07-09 12:25:52 - [INFO] - -------Sending Get Request For user:bimalesh_api_6322@gmail.com
+2026-07-09 12:25:53 - [INFO] - API Response Status code:200
+2026-07-09 12:25:53 - [INFO] - ----Sending PUT Request to update User Account
+2026-07-09 12:25:53 - [INFO] - API Response Satus Code: 200
+2026-07-09 12:25:53 - [INFO] - --- Sending DELETE Request for User: bimalesh_api_6322@gmail.com ---
+2026-07-09 12:25:53 - [INFO] - API Response Status Code: 200
+2026-07-09 12:25:54 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:26:33 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:26:33 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:26:35 - [INFO] - API Response Status Code: 200
+2026-07-09 12:26:35 - [INFO] - -------Sending Get Request For user:bimalesh_api_7641@gmail.com
+2026-07-09 12:26:35 - [INFO] - API Response Status code:200
+2026-07-09 12:26:35 - [INFO] - ----Sending PUT Request to update User Account
+2026-07-09 12:26:35 - [INFO] - API Response Satus Code: 200
+2026-07-09 12:26:35 - [INFO] - --- Sending DELETE Request for User: bimalesh_api_7641@gmail.com ---
+2026-07-09 12:26:36 - [INFO] - API Response Status Code: 200
+2026-07-09 12:26:36 - [INFO] - Tearing down Backend API Context
+2026-07-09 12:30:20 - [INFO] - Spawning Backend API Request Client Context
+2026-07-09 12:30:21 - [INFO] - Sending POST Request to Create User Account ---
+2026-07-09 12:30:22 - [INFO] - API Response Status Code: 200
+2026-07-09 12:30:22 - [INFO] - -------Sending Get Request For user:bimalesh_api_9831@gmail.com
+2026-07-09 12:30:22 - [INFO] - API Response Status code:200
+2026-07-09 12:30:22 - [INFO] - ----Sending PUT Request to update User Account
+2026-07-09 12:30:23 - [INFO] - API Response Satus Code: 200
+2026-07-09 12:30:23 - [INFO] - --- Sending DELETE Request for User: bimalesh_api_9831@gmail.com ---
+2026-07-09 12:30:23 - [INFO] - API Response Status Code: 200
+2026-07-09 12:30:23 - [INFO] - Tearing down Backend API Context
