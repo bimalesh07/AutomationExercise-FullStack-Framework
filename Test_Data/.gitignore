@@ -1,21 +1,28 @@
-
-__pycache__/
-*.py[cod]
-*$py.class
+#Ignore virtual environment folder
 .venv/
 venv/
 ENV/
-env/
 
+# Ignore sensitive environment files
+.env
+*.env
+
+# Ignore test reports and HTML outputs
+Reports/
+*.html
+
+# Ignore application and test runtime logs
 Logs/
 *.log
 
-ScreenShots/
-Screenshots/
-
-Reports/
+#Ignore Python cache and compilation files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 .pytest_cache/
-.htmlcov/
-htmlcov/
+.cache/
 
-.env
+# Ignore IDE specific settings files (VS Code / PyCharm)
+.vscode/
+.idea/
