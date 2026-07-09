@@ -104,3 +104,4 @@ class RegistrationPage:
     def click_continue(self):
         self.logger.info("Clicking on Continue button after registration")
         self.continue_button.click()
+        

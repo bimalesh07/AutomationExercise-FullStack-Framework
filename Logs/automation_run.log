@@ -60,3 +60,74 @@
 2026-07-09 12:30:23 - [INFO] - --- Sending DELETE Request for User: bimalesh_api_9831@gmail.com ---
 2026-07-09 12:30:23 - [INFO] - API Response Status Code: 200
 2026-07-09 12:30:23 - [INFO] - Tearing down Backend API Context
+2026-07-09 15:18:03 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:18:39 - [INFO] - ******* Start login execution *******
+2026-07-09 15:18:39 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:18:40 - [INFO] - **********login Page start ***************
+2026-07-09 15:18:40 - [INFO] - [UI REPORT HOOK] Test Failed: test_user_login. Taking screenshot...
+2026-07-09 15:18:40 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-09 15:18:40 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:18:57 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:19:09 - [INFO] - ******* Start login execution *******
+2026-07-09 15:19:09 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:19:11 - [INFO] - **********login Page start ***************
+2026-07-09 15:19:11 - [INFO] - [UI REPORT HOOK] Test Failed: test_user_login. Taking screenshot...
+2026-07-09 15:19:11 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-09 15:19:11 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:20:31 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:20:36 - [INFO] - ******* Start login execution *******
+2026-07-09 15:20:36 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:20:38 - [INFO] - **********login Page start ***************
+2026-07-09 15:20:38 - [INFO] - [UI REPORT HOOK] Test Failed: test_user_login. Taking screenshot...
+2026-07-09 15:20:38 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-09 15:20:38 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:20:52 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:21:04 - [INFO] - ******* Start login execution *******
+2026-07-09 15:21:04 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:21:05 - [INFO] - **********login Page start ***************
+2026-07-09 15:21:05 - [INFO] - [UI REPORT HOOK] Test Failed: test_user_login. Taking screenshot...
+2026-07-09 15:21:05 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-09 15:21:05 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:23:41 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:23:48 - [INFO] - ******* Start login execution *******
+2026-07-09 15:23:48 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:23:49 - [INFO] - **********login Page start ***************
+2026-07-09 15:23:51 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-09 15:23:51 - [INFO] - *********Verifying sucessful login via logout button visibility
+2026-07-09 15:23:51 - [INFO] - **********Verify the login or not ************
+2026-07-09 15:23:51 - [INFO] - [UI REPORT HOOK] Test Failed: test_user_login. Taking screenshot...
+2026-07-09 15:23:51 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-09 15:23:51 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:33:43 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:33:49 - [INFO] - ******* Start login execution *******
+2026-07-09 15:33:49 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:33:50 - [INFO] - **********login Page start ***************
+2026-07-09 15:33:52 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-09 15:33:52 - [INFO] - *********Verifying sucessful login via logout button visibility
+2026-07-09 15:33:57 - [INFO] - [UI REPORT HOOK] Test Failed: test_user_login. Taking screenshot...
+2026-07-09 15:33:58 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-09 15:33:58 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:34:57 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:35:02 - [INFO] - ******* Start login execution *******
+2026-07-09 15:35:02 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:35:03 - [INFO] - **********login Page start ***************
+2026-07-09 15:35:06 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-09 15:35:06 - [INFO] - *********Verifying sucessful login via logout button visibility
+2026-07-09 15:35:06 - [INFO] - ******* Login Successful! *******
+2026-07-09 15:35:06 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:37:32 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:37:40 - [INFO] - ******* Start login execution *******
+2026-07-09 15:37:40 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:37:41 - [INFO] - **********login Page start ***************
+2026-07-09 15:37:44 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-09 15:37:44 - [INFO] - *********Verifying sucessful login via logout button visibility
+2026-07-09 15:37:44 - [INFO] - ******* Login Successful! *******
+2026-07-09 15:37:44 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 15:40:51 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 15:40:56 - [INFO] - ******* Start login execution *******
+2026-07-09 15:40:56 - [INFO] - ************Navigate loging Page ********
+2026-07-09 15:40:57 - [INFO] - **********login Page start ***************
+2026-07-09 15:40:58 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-09 15:40:58 - [INFO] - *********Verifying sucessful login via logout button visibility
+2026-07-09 15:40:58 - [INFO] - ******* Login Successful! *******
+2026-07-09 15:40:58 - [INFO] - [UI FIXTURE] Closing Browser Tab

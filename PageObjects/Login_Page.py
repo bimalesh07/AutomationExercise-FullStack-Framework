@@ -9,9 +9,10 @@ class LoginPage:
 
         #locators
         self.login_menu_link = page.locator('.shop-menu a[href="/login"]')
-        self.email_input = page.locator("data-qa=login-email")
-        self.password_input = page.locator("data-qa=login-password")
-        self.submit_button = page.locator("data-qa=login-button")
+        self.email_input = page.locator("[data-qa='login-email']")
+        self.password_input = page.locator("[data-qa='login-password']")
+        self.submit_button = page.locator("[data-qa='login-button']")
+        self.logout_visible = page.locator('.shop-menu a[href="/logout"]')
 
     def navigate_loginpage(self):
         self.logger.info("************Navigate loging Page ********")
@@ -19,6 +20,12 @@ class LoginPage:
 
     def Login_with_credentials(self, email, password):
         self.logger.info("**********login Page start ***************")
-        self.page.fill(self.login_email)
+        self.email_input.fill(email)
+        self.password_input.fill(password)
+        self.submit_button.click()
+        self.logger.info("**************Sucessfully Loin Completed ******")
 
+    def very_the_login(self):
+        self.logger.info("**********Verify the login or not ************")
+        return self.logout_visible()
         
