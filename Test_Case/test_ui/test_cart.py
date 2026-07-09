@@ -15,14 +15,12 @@ class TestCartIndividualValidations:
 
         product_page.navigate_to_product()
         product_page.view_product_first.click()
-    
         cart_page.change_quantity_and_add("4")
         
-   
         product_page.view_cart_modal_link.click()
- 
         expect(cart_page.cart_quantity_value).to_have_text("4")
-        logger.info("Guest Quantity 4 Verification Passed!")
+        logger.info("Guest Quantity 4 Verification Passed")
+
 
     def test_remove_product_from_cart(self, ui_page):
         page, logger = ui_page

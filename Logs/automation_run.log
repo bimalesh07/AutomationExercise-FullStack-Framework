@@ -1,0 +1,25 @@
+2026-07-10 00:15:42 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:15:51 - [INFO] - ******* Starting Guest Test: Verify Product Quantity *******
+2026-07-10 00:15:51 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:15:53 - [INFO] - Changing quantity to 4 on product detail page...
+2026-07-10 00:15:54 - [INFO] - Guest Quantity 4 Verification Passed!
+2026-07-10 00:15:54 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:15:54 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:16:00 - [INFO] - ******* Starting Guest Test: Remove Product from Cart *******
+2026-07-10 00:16:00 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:16:03 - [INFO] - Clicking on 'X' button to remove product from cart...
+2026-07-10 00:16:08 - [INFO] - [UI REPORT HOOK] Test Failed: test_remove_product_from_cart. Taking screenshot...
+2026-07-10 00:16:08 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-10 00:16:08 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:17:29 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:17:33 - [INFO] - ******* Starting Guest Test: Verify Product Quantity *******
+2026-07-10 00:17:33 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:17:35 - [INFO] - Changing quantity to 4 on product detail page...
+2026-07-10 00:17:36 - [INFO] - Guest Quantity 4 Verification Passed!
+2026-07-10 00:17:36 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:17:36 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:17:42 - [INFO] - ******* Starting Guest Test: Remove Product from Cart *******
+2026-07-10 00:17:42 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:17:45 - [INFO] - Clicking on 'X' button to remove product from cart...
+2026-07-10 00:17:46 - [INFO] - Guest Product Removal Passed!
+2026-07-10 00:17:46 - [INFO] - [UI FIXTURE] Closing Browser Tab
