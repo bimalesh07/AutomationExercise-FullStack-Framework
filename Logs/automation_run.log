@@ -100,3 +100,19 @@
 2026-07-10 00:30:29 - [INFO] - Checkout Address Details Verified Successfully!
 2026-07-10 00:30:29 - [INFO] - Cleaning up session 
 2026-07-10 00:30:29 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:38:31 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:38:35 - [INFO] - Logging in for background setup ===
+2026-07-10 00:38:35 - [INFO] - ************Navigate loging Page ********
+2026-07-10 00:38:36 - [INFO] - **********login Page start ***************
+2026-07-10 00:38:37 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-10 00:38:37 - [INFO] - Browser session is authenticated ===
+2026-07-10 00:38:37 - [INFO] - Starting E2E Test
+2026-07-10 00:38:37 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:38:40 - [INFO] - Filling credit card details...
+2026-07-10 00:38:40 - [INFO] - Clicking 'Pay and Confirm Order' button...
+2026-07-10 00:38:42 - [INFO] - Order Placed header is visible on screen!
+2026-07-10 00:38:42 - [INFO] - Clicking Download Invoice button...
+2026-07-10 00:38:43 - [INFO] - Invoice saved locally at: ./Reports/final_invoice.txt
+2026-07-10 00:38:43 - [INFO] - E2E RUN PASSED SUCCESSFULLY!
+2026-07-10 00:38:43 - [INFO] - Cleaning up session 
+2026-07-10 00:38:43 - [INFO] - [UI FIXTURE] Closing Browser Tab
