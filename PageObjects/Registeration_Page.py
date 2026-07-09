@@ -42,6 +42,8 @@ class RegistrationPage:
         )
         self.continue_button = page.locator('a[data-qa="continue-button"]')
 
+        self.signup_error_message = page.locator("[style='color: red;']").first
+
     def navigate_to_signup(self):
         self.logger.info("Navigate to initial signup page")
         self.signup_login_link.click()
@@ -53,6 +55,7 @@ class RegistrationPage:
         self.signup_name_input.fill(name)
         self.signup_email_input.fill(email)
         self.signup_button.click()
+
 
     def fill_account_and_address_info(
         self,
@@ -104,4 +107,3 @@ class RegistrationPage:
     def click_continue(self):
         self.logger.info("Clicking on Continue button after registration")
         self.continue_button.click()
-        

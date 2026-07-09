@@ -28,3 +28,17 @@
 2026-07-09 17:16:29 - [INFO] - ********Error message invlid password and username ******
 2026-07-09 17:16:29 - [INFO] - ******* Test Case 3 Passed! Error message verified successfully. *******
 2026-07-09 17:16:29 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 17:30:55 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 17:31:03 - [INFO] - ******* Starting Test Case 5: Register User with existing email *******
+2026-07-09 17:31:03 - [INFO] - Navigate to initial signup page
+2026-07-09 17:31:04 - [INFO] - Submitting initial signup for Name: Bimalesh, Email: bimlaesh@gmail.com
+2026-07-09 17:31:05 - [INFO] - Verifying 'Email Address already exist!' warning display...
+2026-07-09 17:31:05 - [INFO] - ******* Existing Passed Successfully! *******
+2026-07-09 17:31:05 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-09 17:31:12 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-09 17:31:20 - [INFO] - ******* Starting Test Case 5: Register User with existing email *******
+2026-07-09 17:31:20 - [INFO] - Navigate to initial signup page
+2026-07-09 17:31:21 - [INFO] - Submitting initial signup for Name: Bimalesh, Email: bimlaesh@gmail.com
+2026-07-09 17:31:22 - [INFO] - Verifying 'Email Address already exist!' warning display...
+2026-07-09 17:31:22 - [INFO] - ******* Existing Passed Successfully! *******
+2026-07-09 17:31:22 - [INFO] - [UI FIXTURE] Closing Browser Tab
