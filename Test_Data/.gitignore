@@ -30,3 +30,5 @@ __pycache__/
 # Ignore IDE specific settings files (VS Code / PyCharm)
 .vscode/
 .idea/
+
+Jenkinsfile

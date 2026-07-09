@@ -1,10 +1,10 @@
 # API_Actions/User_Api_Action.py
 
 class UserAPIActions:
+
     def __init__(self, api_context, logger):
         self.api_context = api_context
         self.logger = logger
-
 
     #Create User
     def create_user_account(self, payload):
@@ -20,7 +20,7 @@ class UserAPIActions:
         self.logger.info(f"API Response Status code:{response.status}")
         return response
     
-     #Update User Account (PUT Request)
+    #Update User Account (PUT Request)
     def update_user_account(self, payload):
         self.logger.info(f"----Sending PUT Request to update User Account")
         response = self.api_context.put("updateAccount", form=payload)
