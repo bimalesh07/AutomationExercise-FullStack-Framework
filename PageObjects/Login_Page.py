@@ -13,6 +13,7 @@ class LoginPage:
         self.password_input = page.locator("[data-qa='login-password']")
         self.submit_button = page.locator("[data-qa='login-button']")
         self.logout_visible = page.locator('.shop-menu a[href="/logout"]')
+        self.login_Invalid_message = page.locator("[style='color: red;']")
 
     def navigate_loginpage(self):
         self.logger.info("************Navigate loging Page ********")
@@ -28,4 +29,15 @@ class LoginPage:
     def very_the_login(self):
         self.logger.info("**********Verify the login or not ************")
         return self.logout_visible()
-        
+
+
+    def login_error_message(self):
+        self.logger.info("********Error message invlid password and username ******")
+        return self.login_Invalid_message
+
+    #logout 
+    def click_logout(self):
+        self.logger.info("Clicking on the Logout button link...")
+        self.logout_visible.click()
+
+    
