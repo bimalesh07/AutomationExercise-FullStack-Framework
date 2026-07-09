@@ -18,11 +18,15 @@ class CheckoutPage:
         self.expiry_month_input = page.locator("[data-qa='expiry-month']")
         self.expiry_year_input = page.locator("[data-qa='expiry-year']")
         self.pay_button = page.locator("[data-qa='pay-button']")
-        
     
         self.success_alert = page.locator("text=Your order has been placed successfully!")
         self.order_placed_header = page.locator("text=ORDER PLACED!")
 
+        #adress
+        self.delivery_address_block = page.locator("ul:has(h3:has-text('Your delivery address'))")
+        self.billing_address_block = page.locator("ul:has(h3:has-text('Your billing address'))")
+
+        
     def click_proceed_to_checkout(self):
         self.proceed_to_checkout_btn.click()
 
@@ -42,3 +46,9 @@ class CheckoutPage:
         
         self.logger.info("Clicking 'Pay and Confirm Order' button...")
         self.pay_button.click()
+
+    def get_delivery_address_locator(self):
+        return self.delivery_address_block
+
+    def get_billing_address_locator(self):
+        return self.billing_address_block

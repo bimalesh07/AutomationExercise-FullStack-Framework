@@ -23,3 +23,80 @@
 2026-07-10 00:17:45 - [INFO] - Clicking on 'X' button to remove product from cart...
 2026-07-10 00:17:46 - [INFO] - Guest Product Removal Passed!
 2026-07-10 00:17:46 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:26:28 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:26:40 - [INFO] - Logging in for background setup ===
+2026-07-10 00:26:40 - [INFO] - ************Navigate loging Page ********
+2026-07-10 00:26:40 - [INFO] - **********login Page start ***************
+2026-07-10 00:26:42 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-10 00:26:42 - [INFO] - Browser session is authenticated ===
+2026-07-10 00:26:42 - [INFO] - ******* Starting Full Checkout & Payment Workflow *******
+2026-07-10 00:26:42 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:26:46 - [INFO] - Filling credit card details...
+2026-07-10 00:26:46 - [INFO] - Clicking 'Pay and Confirm Order' button...
+2026-07-10 00:26:49 - [INFO] - Verifying Order Success Page...
+2026-07-10 00:26:49 - [INFO] - ******* Test Passed! Order Placed Successfully *******
+2026-07-10 00:26:49 - [INFO] - Cleaning up session 
+2026-07-10 00:26:49 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:26:49 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:26:53 - [INFO] - Logging in for background setup ===
+2026-07-10 00:26:53 - [INFO] - ************Navigate loging Page ********
+2026-07-10 00:26:53 - [INFO] - **********login Page start ***************
+2026-07-10 00:26:54 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-10 00:26:54 - [INFO] - Browser session is authenticated ===
+2026-07-10 00:26:54 - [INFO] - ******* Starting Individual Test: Verify Address Details *******
+2026-07-10 00:26:54 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:27:02 - [INFO] - [UI REPORT HOOK] Test Failed: test_verify_address_details_on_checkout_page. Taking screenshot...
+2026-07-10 00:27:02 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-10 00:27:02 - [INFO] - Cleaning up session 
+2026-07-10 00:27:02 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:28:10 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:28:15 - [INFO] - Logging in for background setup ===
+2026-07-10 00:28:15 - [INFO] - ************Navigate loging Page ********
+2026-07-10 00:28:15 - [INFO] - **********login Page start ***************
+2026-07-10 00:28:17 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-10 00:28:17 - [INFO] - Browser session is authenticated ===
+2026-07-10 00:28:17 - [INFO] - ******* Starting Full Checkout & Payment Workflow *******
+2026-07-10 00:28:17 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:28:21 - [INFO] - Filling credit card details...
+2026-07-10 00:28:21 - [INFO] - Clicking 'Pay and Confirm Order' button...
+2026-07-10 00:28:23 - [INFO] - Verifying Order Success Page...
+2026-07-10 00:28:23 - [INFO] - ******* Test Passed! Order Placed Successfully *******
+2026-07-10 00:28:23 - [INFO] - Cleaning up session 
+2026-07-10 00:28:23 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:28:24 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:28:28 - [INFO] - Logging in for background setup ===
+2026-07-10 00:28:28 - [INFO] - ************Navigate loging Page ********
+2026-07-10 00:28:29 - [INFO] - **********login Page start ***************
+2026-07-10 00:28:30 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-10 00:28:30 - [INFO] - Browser session is authenticated ===
+2026-07-10 00:28:30 - [INFO] - ******* Starting Individual Test: Verify Address Details *******
+2026-07-10 00:28:30 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:28:38 - [INFO] - [UI REPORT HOOK] Test Failed: test_verify_address_details_on_checkout_page. Taking screenshot...
+2026-07-10 00:28:38 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-10 00:28:38 - [INFO] - Cleaning up session 
+2026-07-10 00:28:38 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:30:08 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:30:12 - [INFO] - Logging in for background setup ===
+2026-07-10 00:30:12 - [INFO] - ************Navigate loging Page ********
+2026-07-10 00:30:13 - [INFO] - **********login Page start ***************
+2026-07-10 00:30:14 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-10 00:30:14 - [INFO] - Browser session is authenticated ===
+2026-07-10 00:30:14 - [INFO] - ******* Starting Full Checkout & Payment Workflow *******
+2026-07-10 00:30:14 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:30:18 - [INFO] - Filling credit card details...
+2026-07-10 00:30:18 - [INFO] - Clicking 'Pay and Confirm Order' button...
+2026-07-10 00:30:20 - [INFO] - Verifying Order Success Page...
+2026-07-10 00:30:20 - [INFO] - ******* Test Passed! Order Placed Successfully *******
+2026-07-10 00:30:20 - [INFO] - Cleaning up session 
+2026-07-10 00:30:20 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 00:30:21 - [INFO] - [UI FIXTURE] Opening Isolated Browser Tab Context
+2026-07-10 00:30:25 - [INFO] - Logging in for background setup ===
+2026-07-10 00:30:25 - [INFO] - ************Navigate loging Page ********
+2026-07-10 00:30:25 - [INFO] - **********login Page start ***************
+2026-07-10 00:30:26 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-10 00:30:26 - [INFO] - Browser session is authenticated ===
+2026-07-10 00:30:26 - [INFO] - ******* Starting Individual Test: Verify Address Details *******
+2026-07-10 00:30:26 - [INFO] - ************ Navigate to Products Page *************
+2026-07-10 00:30:29 - [INFO] - Checkout Address Details Verified Successfully!
+2026-07-10 00:30:29 - [INFO] - Cleaning up session 
+2026-07-10 00:30:29 - [INFO] - [UI FIXTURE] Closing Browser Tab

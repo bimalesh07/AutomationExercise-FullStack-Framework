@@ -39,3 +39,27 @@ class TestCheckoutFlow:
         expect(checkout_page.order_placed_header).to_be_visible()
         
         logger.info("******* Test Passed! Order Placed Successfully *******")
+
+
+    def test_verify_address_details_on_checkout_page(self, logged_in_page):
+    
+        page, logger = logged_in_page
+        logger.info("******* Starting Individual Test: Verify Address Details *******")
+        
+        product_page = ProductPage(page, logger)
+        checkout_page = CheckoutPage(page, logger)
+
+        product_page.navigate_to_product()
+        product_page.add_to_cart_first.click()
+        product_page.view_cart_modal_link.click()
+        
+     
+        checkout_page.click_proceed_to_checkout()
+        delivery_locator = checkout_page.get_delivery_address_locator()
+        billing_locator = checkout_page.get_billing_address_locator()
+        
+    
+        expect(delivery_locator).to_contain_text("Bimalesh", ignore_case=True)
+        expect(billing_locator).to_contain_text("Bimalesh", ignore_case=True)
+        
+        logger.info("Checkout Address Details Verified Successfully!")
