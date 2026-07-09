@@ -4,12 +4,12 @@ from Utilities.Read_Env import ReadEnv
 from Utilities.Custom_Logger import CustomLogger
 from API_Actions.User_Api_Action import UserAPIActions
 
-# Root wale logger ko yahan import kiya
+
 logger = CustomLogger.get_logger()
 
 @pytest.fixture(scope="session")
 def api_context():
-    logger.info("[API FIXTURE] Spawning Backend API Request Client Context")
+    logger.info("Spawning Backend API Request Client Context")
     
     playwright_instance = sync_playwright().start()
     base_api_url = ReadEnv.get_base_api()
@@ -17,7 +17,7 @@ def api_context():
     
     yield request_context
     
-    logger.info("[API FIXTURE] Tearing down Backend API Context")
+    logger.info("Tearing down Backend API Context")
     request_context.dispose()
     playwright_instance.stop()
 

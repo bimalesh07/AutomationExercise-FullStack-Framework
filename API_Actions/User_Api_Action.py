@@ -12,3 +12,10 @@ class UserAPIActions:
         
         self.logger.info(f"API Response Status Code: {response.status}")
         return response
+
+    #Get user Details
+
+    def get_user_details(self, email):
+        self.logger.info(f"-------Sending Get Request For user:{email}")
+        response = self.api_context.get("getUserDetailByEmail",)
+
