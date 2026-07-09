@@ -3,6 +3,7 @@ import os
 from playwright.sync_api import sync_playwright
 from Utilities.Read_Env import ReadEnv
 from Utilities.Custom_Logger import CustomLogger
+from PageObjects.Login_Page import LoginPage
 
 logger = CustomLogger.get_logger()
 
@@ -28,12 +29,19 @@ def ui_page():
 @pytest.fixture(scope="function")
 def logged_in_page(ui_page):
     page, logger = ui_page
-    logger.info("[FIXTURE HELP] Automatically authenticating user via Page Object...")
-    
+
+    logger.info("Logging in for background setup ===")
+    email = ReadEnv.get_email()
+    password = ReadEnv.get_password()
+
     login_page = LoginPage(page, logger)
-    login_page.login_to_application("bhai_test@gmail.com", "secure_password123")
-    
+    login_page.navigate_loginpage()
+    login_page.Login_with_credentials(email, password)
+
+    logger.info("Browser session is authenticated ===")
     yield page, logger
+
+    logger.info("Cleaning up session ")
 
 
 
