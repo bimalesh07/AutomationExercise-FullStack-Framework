@@ -116,3 +116,83 @@
 2026-07-10 00:38:43 - [INFO] - E2E RUN PASSED SUCCESSFULLY!
 2026-07-10 00:38:43 - [INFO] - Cleaning up session 
 2026-07-10 00:38:43 - [INFO] - [UI FIXTURE] Closing Browser Tab
+2026-07-10 15:32:46 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:32:51 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:32:54 - [INFO] - API Response Status Code: 200
+2026-07-10 15:32:54 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:32:55 - [INFO] - API Response Status Code: 403
+2026-07-10 15:32:55 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:32:56 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:32:57 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:32:58 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:32:58 - [INFO] - Tearing down Backend API Context
+2026-07-10 15:50:05 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:50:10 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:50:13 - [INFO] - API Response Status Code: 200
+2026-07-10 15:50:13 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:50:14 - [INFO] - API Response Status Code: 403
+2026-07-10 15:50:14 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:50:16 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:50:16 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:50:17 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:50:17 - [INFO] - Tearing down Backend API Context
+2026-07-10 15:50:32 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:50:33 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:50:35 - [INFO] - API Response Status Code: 200
+2026-07-10 15:50:35 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:50:36 - [INFO] - API Response Status Code: 403
+2026-07-10 15:50:36 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:50:38 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:50:39 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:50:39 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:50:39 - [INFO] - Tearing down Backend API Context
+2026-07-10 15:50:50 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:50:50 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:50:52 - [INFO] - API Response Status Code: 200
+2026-07-10 15:50:52 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:50:53 - [INFO] - API Response Status Code: 403
+2026-07-10 15:50:53 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:50:55 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:50:55 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:50:56 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:50:57 - [INFO] - Tearing down Backend API Context
+2026-07-10 15:52:19 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:52:20 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:52:23 - [INFO] - API Response Status Code: 200
+2026-07-10 15:52:23 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:52:23 - [INFO] - API Response Status Code: 403
+2026-07-10 15:52:24 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:52:25 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:52:26 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:52:27 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:52:27 - [INFO] - Tearing down Backend API Context
+2026-07-10 15:52:52 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:52:58 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:53:00 - [INFO] - API Response Status Code: 200
+2026-07-10 15:53:00 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:53:01 - [INFO] - API Response Status Code: 403
+2026-07-10 15:53:01 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:53:02 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:53:03 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:53:03 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:53:04 - [INFO] - Tearing down Backend API Context
+2026-07-10 15:53:41 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:53:41 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:53:43 - [INFO] - API Response Status Code: 200
+2026-07-10 15:53:44 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:53:44 - [INFO] - API Response Status Code: 403
+2026-07-10 15:53:44 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:53:46 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:53:46 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:53:47 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:53:47 - [INFO] - Tearing down Backend API Context
+2026-07-10 15:55:12 - [INFO] - Spawning Backend API Request Client Context
+2026-07-10 15:55:13 - [INFO] - ***** Sending GET Request to fetch all products List ******
+2026-07-10 15:55:15 - [INFO] - API Response Status Code: 200
+2026-07-10 15:55:15 - [INFO] - Sending unsupported POST request to products list
+2026-07-10 15:55:15 - [INFO] - API Response Status Code: 403
+2026-07-10 15:55:15 - [INFO] - Sending GET request to fetch all brands list
+2026-07-10 15:55:17 - [INFO] - Sending unsupported PUT request to brands list
+2026-07-10 15:55:17 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
+2026-07-10 15:55:17 - [INFO] - Triggering API 5: Searching product for keyword -> None
+2026-07-10 15:55:18 - [INFO] - Tearing down Backend API Context
