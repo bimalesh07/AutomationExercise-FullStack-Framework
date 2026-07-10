@@ -29,18 +29,15 @@ pipeline {
             description: 'Individual File Selection (Used when RUN_MODE is "By_Specific_File").'
         )
     }
-
-    // ENVIRONMENT VARIABLES
     environment {
         REPORT_NAME     = "master_automation_report.html"
-        BASE_URL        = "https://automationexercise.com"
-        TEST_USER_EMAIL = "tester_alpha@gmail.com"
-        TEST_USER_NAME  = "Bimalesh Kumar"
-        DB_PASSWORD     = "Bimalesh@2026" 
+        base_url        = "https://automationexercise.com"
+        API_BASE_URL    = "https://automationexercise.com/api/"
+        email           = "bimlaesh@gmail.com"
+        password        = "123456bky" 
     }
 
     stages {
-        // Code Pull from Git
         stage('Checkout Code') {
             steps {
                 echo "Cleaning workspace and fetching fresh code from GitHub..."
@@ -49,7 +46,6 @@ pipeline {
             }
         }
         
-        // Virtual Env, Libraries aur Runtime .env File Injection
         stage('Setup Virtual Environment') {
             steps {
                 echo "Installing Python Dependencies and creating temporary .env file..."
@@ -62,17 +58,15 @@ pipeline {
                     pip install -r requirements.txt
                     playwright install
 
-                    :: CREATE TEMPORARY .env FILE
-                    echo BASE_URL=%BASE_URL% > .env
-                    echo TEST_USER_EMAIL=%TEST_USER_EMAIL% >> .env
-                    echo TEST_USER_NAME=%TEST_USER_NAME% >> .env
-                    echo DB_PASSWORD=%DB_PASSWORD% >> .env
+                    (echo base_url=%base_url%)>.env
+                    (echo API_BASE_URL=%API_BASE_URL%)>>.env
+                    (echo email=%email%)>>.env
+                    (echo password=%password%)>>.env
                     echo .env file created successfully for this build.
                 '''
             }
         }
 
-        // Smart Execution Logic
         stage('Execute Automation Tests') {
             steps {
                 script {
@@ -109,13 +103,10 @@ pipeline {
         }
     }
 
-    // HTML Reports Publishing onto Dashboard
     post {
         always {
             script {
                 echo "Publishing Execution Reports onto Jenkins Dashboard View..."
-                
-                // DELETE TEMPORARY .env FILE safely inside disk workspace
                 bat 'if exist .env del /f /q .env'
                 echo ".env file safely removed from workspace."
                 
