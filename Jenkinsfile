@@ -42,7 +42,7 @@ pipeline {
     }
 
     stages {
-        //Code Pull from Git
+        // Code Pull from Git
         stage('Checkout Code') {
             steps {
                 echo "Cleaning workspace and fetching fresh code from GitHub..."
@@ -50,6 +50,7 @@ pipeline {
                 checkout scm
             }
         }
+        
         // Virtual Env, Libraries aur Runtime .env File Injection
         stage('Setup Virtual Environment') {
             steps {
@@ -63,7 +64,7 @@ pipeline {
                     pip install -r requirements.txt
                     playwright install
 
-                    :: REATE TEMPORARY .env FILE (Yahan dynamically .env file ban rahi hai)
+                    :: CREATE TEMPORARY .env FILE
                     echo BASE_URL=%BASE_URL% > .env
                     echo TEST_USER_EMAIL=%TEST_USER_EMAIL% >> .env
                     echo TEST_USER_NAME=%TEST_USER_NAME% >> .env
@@ -73,59 +74,58 @@ pipeline {
             }
         }
 
-        //Smart Execution Logic
+        // Smart Execution Logic
         stage('Execute Automation Tests') {
             steps {
                 script {
-                    // CONDITION A: Suite Executions
+                    //Suite Executions
                     if (params.RUN_MODE == 'By_Suite_Type') {
                         
                         if (params.SELECT_SUITE == 'full_regression') {
                             echo " RUNNING FULL REGRESSION: UI + API Suites..."
                             bat """
                                 call .venv\\Scripts\\activate
-                                pytest Test_Case/test_ui/ Test_Case/test_api/ -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                                pytest Test_Case/test_ui/ Test_Case/test_api/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
                             """
                         }
                         else if (params.SELECT_SUITE == 'only_ui') {
                             echo "RUNNING ONLY UI REGRESSION SUITE..."
                             bat """
                                 call .venv\\Scripts\\activate
-                                pytest Test_Case/test_ui/ -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                                pytest Test_Case/test_ui/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
                             """
                         }
                         else if (params.SELECT_SUITE == 'only_api') {
                             echo "RUNNING ONLY API REGRESSION SUITE..."
                             bat """
                                 call .venv\\Scripts\\activate
-                                pytest Test_Case/test_api/ -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                                pytest Test_Case/test_api/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
                             """
                         }
                         else {
                             echo "RUNNING CRITICAL SMOKE TAGS..."
                             bat """
                                 call .venv\\Scripts\\activate
-                                pytest Test_Case/ -m smoke -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                                pytest Test_Case/ -m smoke -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
                             """
                         }
                     } 
                     
-                    // CONDITION B: Individual File Executions with Dynamic Path Router
+                    //Individual File Executions
                     else {
                         echo "Target File Selected: ${params.SELECT_FILE}"
                         
-                        // Smart check to see if the chosen file belongs to API or UI folder
                         if (params.SELECT_FILE.contains('_api.py')) {
                             echo "Routing execution context to API directory..."
                             bat """
                                 call .venv\\Scripts\\activate
-                                pytest Test_Case/test_api/${params.SELECT_FILE} -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                                pytest Test_Case/test_api/${params.SELECT_FILE} -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
                             """
                         } else {
                             echo "Routing execution context to UI directory..."
                             bat """
                                 call .venv\\Scripts\\activate
-                                pytest Test_Case/test_ui/${params.SELECT_FILE} -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                                pytest Test_Case/test_ui/${params.SELECT_FILE} -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
                             """
                         }
                     }
@@ -134,21 +134,25 @@ pipeline {
         }
     }
 
-    //HTML Reports Publishing onto Dashboard Dashboard
+    // HTML Reports Publishing onto Dashboard
     post {
         always {
-            echo "Publishing Execution Reports onto Jenkins Dashboard View..."
-            //DELETE TEMPORARY .env FILE (Test end then  Jenkins  permanently delete env)
-            bat 'if exist .env del /f /q .env'
-            echo ".env file safely removed from workspace."
-            publishHTML(target: [
-                allowMissing: false,
-                alwaysLinkToLastBuild: true,
-                keepAll: true,
-                reportDir: 'Reports',
-                reportFiles: "${env.REPORT_NAME}",
-                reportName: 'Full Test Execution Report'
-            ])
+            node {
+                echo "Publishing Execution Reports onto Jenkins Dashboard View..."
+                
+                //DELETE TEMPORARY .env FILE safely inside disk workspace
+                bat 'if exist .env del /f /q .env'
+                echo ".env file safely removed from workspace."
+                
+                publishHTML(target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'Reports',
+                    reportFiles: "${env.REPORT_NAME}",
+                    reportName: 'Full Test Execution Report'
+                ])
+            }
         }
     }
 }
