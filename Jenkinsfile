@@ -146,8 +146,8 @@ pipeline {
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
                 reportDir: 'Reports',
-                reportFiles: "${REPORT_NAME}",
-                reportName: 'Master Test Execution Report'
+                reportFiles: "${env.REPORT_NAME}",
+                reportName: 'Full Test Execution Report'
             ])
         }
     }
