@@ -32,4 +32,3 @@ __pycache__/
 .idea/
 
 Jenkinsfile
-test_e2e_order.py
