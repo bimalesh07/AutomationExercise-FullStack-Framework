@@ -107,9 +107,9 @@ pipeline {
                     echo "Running Automated UI Load Test via JMeter..."
                     bat "if exist Reports\\jmeter_results.csv del /f /q Reports\\jmeter_results.csv"
                     
-                    bat """
-                        call C:\\apache-jmeter-5.6.3\\bin\\jmeter.bat -n -t Performance_Tests/load_test.jmx -l Reports/jmeter_results.csv
-                    """
+                   bat """
+                         call "C:\\apache-jmeter-5.6.3\\bin\\jmeter" -n -t Performance_Tests/load_test.jmx -l Reports/jmeter_results.csv
+                     """
                     echo "JMeter Performance Testing Completed!"
                 }
             }
