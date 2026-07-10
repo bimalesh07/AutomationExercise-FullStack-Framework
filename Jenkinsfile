@@ -37,8 +37,8 @@ pipeline {
         TEST_USER_EMAIL = "tester_alpha@gmail.com"
         TEST_USER_NAME  = "Bimalesh Kumar"
         
-        // Credentials binding mapping from Jenkins Credentials Manager
-        DB_PASSWORD     = credentials('MY_SECRET_PASSWORD') 
+        // Credentials from Jenkins Credentials Manager
+        DB_PASSWORD = credentials('MY_SECRET_PASSWORD') 
     }
 
     stages {
@@ -50,16 +50,25 @@ pipeline {
                 checkout scm
             }
         }
-
-        // Environment Provisioning
+        // Virtual Env, Libraries aur Runtime .env File Injection
         stage('Setup Virtual Environment') {
             steps {
-                echo "Installing Python Dependencies and Playwright System Binaries..."
+                echo "Installing Python Dependencies and creating temporary .env file..."
                 bat '''
-                    python -m venv .venv
+                    :: Virtual Environment logic
+                    if not exist .venv (
+                        python -m venv .venv
+                    )
                     call .venv\\Scripts\\activate
                     pip install -r requirements.txt
                     playwright install
+
+                    :: REATE TEMPORARY .env FILE (Yahan dynamically .env file ban rahi hai)
+                    echo BASE_URL=%BASE_URL% > .env
+                    echo TEST_USER_EMAIL=%TEST_USER_EMAIL% >> .env
+                    echo TEST_USER_NAME=%TEST_USER_NAME% >> .env
+                    echo DB_PASSWORD=%DB_PASSWORD% >> .env
+                    echo .env file created successfully for this build.
                 '''
             }
         }
@@ -129,6 +138,9 @@ pipeline {
     post {
         always {
             echo "Publishing Execution Reports onto Jenkins Dashboard View..."
+            //DELETE TEMPORARY .env FILE (Test end then  Jenkins  permanently delete env)
+            bat 'if exist .env del /f /q .env'
+            echo ".env file safely removed from workspace."
             publishHTML(target: [
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
