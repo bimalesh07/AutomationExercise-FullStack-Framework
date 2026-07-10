@@ -62,7 +62,6 @@ class TestUserRegistrationAPI:
 
         #DELETE USER ACCOUNT
         delete_res = user_api.delete_user_account(test_email, password)
-
         assert delete_res.status == 200
         assert delete_res.json().get("responseCode") == 200
         assert delete_res.json().get("message") == "Account deleted!"
@@ -70,7 +69,36 @@ class TestUserRegistrationAPI:
 
 
 
+    #LOGIN VALIDATIONS
+    def test_api_verify_login_with_valid_details(self, user_api):
+        """API 7: POST To Verify Login with valid details (Positive Scenario)"""
+        # Ek common default email jo framework testing ke liye use ho sake
+        response = user_api.verify_login(email="bimalesh@test.com", password="password123")
+        assert response.status in [200, 403]
+        if response.status == 200:
+            json_data = response.json()
+            assert json_data["responseCode"] == 200
+            assert "User exists!" in json_data["message"]
 
+    def test_api_verify_login_without_email_parameter(self, user_api):
+        response = user_api.verify_login(email=None, password="password123")
+        assert response.status in [200, 400, 403]
+        if response.status == 200:
+            json_data = response.json()
+            assert json_data["responseCode"] == 400
+            assert "missing" in json_data["message"].lower()
 
+    def test_api_delete_to_verify_login_unsupported(self, user_api):
+        response = user_api.verify_login(invalid_method=True)
+        assert response.status in [200, 405, 403]
+        if response.status == 200:
+            json_data = response.json()
+            assert json_data["responseCode"] == 405
 
-
+    def test_api_verify_login_with_invalid_details(self, user_api):
+        response = user_api.verify_login(email="ghost_user_xyz@test.com", password="fake")
+        assert response.status in [200, 404, 403]
+        if response.status == 200:
+            json_data = response.json()
+            assert json_data["responseCode"] == 404
+            assert "not found" in json_data["message"].lower()

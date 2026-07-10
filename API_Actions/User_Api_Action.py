@@ -34,3 +34,22 @@ class UserAPIActions:
         self.logger.info(f"API Response Status Code: {response.status}")
         return response
 
+    
+    def verify_login(self, email=None, password=None, invalid_method=False):
+        self.logger.info(f"Triggering Login Verification API for Email: {email}")
+        payload = {}
+
+        if email is not None:
+            payload["email"] = email
+
+        if password is not None:
+            payload["password"] = password
+
+        if invalid_method:
+            response = self.api_context.delete("/verifyLogin", headers=self.headers)
+            
+        else:
+            response = self.api_context.post("/verifyLogin", form=payload, headers=self.headers)
+            
+        return response
+
