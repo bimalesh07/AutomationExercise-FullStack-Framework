@@ -34,7 +34,7 @@ class TestProductIndividualAPIs:
         response = product_api.put_to_brands_list()
         assert response.status in [403, 405, 200]
 
-    def test_api_search_product_with_valid_parameter(self, product_api)
+    def test_api_search_product_with_valid_parameter(self, product_api):
         response = product_api.search_product(product_name="tshirt")
         assert response.status in [200, 403]
 
