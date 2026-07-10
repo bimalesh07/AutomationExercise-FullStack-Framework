@@ -4,6 +4,9 @@ class UserAPIActions:
     def __init__(self, api_context, logger):
         self.api_context = api_context
         self.logger = logger
+        self.headers = {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
 
     #Create User
     def create_user_account(self, payload):
