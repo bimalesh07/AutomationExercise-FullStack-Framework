@@ -101,9 +101,7 @@ pipeline {
                 }
             }
         }
-    }
-
-    stage('Execute Performance Tests') {
+        stage('Execute Performance Tests') {
             steps {
                 script {
                     echo "Running Automated UI Load Test via JMeter..."
@@ -116,6 +114,7 @@ pipeline {
                 }
             }
         }
+    } 
 
     post {
         always {

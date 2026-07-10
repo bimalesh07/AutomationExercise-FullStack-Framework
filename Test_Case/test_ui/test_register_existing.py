@@ -16,8 +16,6 @@ class TestRegisterExistingEmail:
         register_page = RegistrationPage(page, logger)
         register_page.navigate_to_signup()
         register_page.fill_initial_signup("Bimalesh", existing_email)
-
-
         logger.info("Verifying 'Email Address already exist!' warning display...")
         
         expect(register_page.signup_error_message).to_be_visible()

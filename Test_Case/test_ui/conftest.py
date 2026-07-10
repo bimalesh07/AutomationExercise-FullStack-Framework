@@ -26,6 +26,7 @@ def ui_page():
     playwright_instance.stop()
 
 
+#Login 
 @pytest.fixture(scope="function")
 def logged_in_page(ui_page):
     page, logger = ui_page
