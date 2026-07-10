@@ -1,52 +1,60 @@
 pipeline {
     agent any
-
-    // 🎛️ 1. JENKINS DASHBOARD DROPDOWNS SETUP
     parameters {
         choice(
             name: 'RUN_MODE', 
             choices: ['By_Suite_Type', 'By_Specific_File'], 
-            description: '1. Pehle select karein ki Suite Type se chalana hai ya kisi ek Single File se.'
+            description: 'Select RUN_MODE: Run whole suite or a specific individual file.'
         )
         choice(
             name: 'SELECT_SUITE', 
             choices: ['full_regression', 'only_ui', 'only_api', 'smoke'], 
-            description: '2. Agar RUN_MODE "By_Suite_Type" hai, toh yahan se selection karein.'
+            description: 'Suite Selection (Used when RUN_MODE is "By_Suite_Type").'
         )
         choice(
             name: 'SELECT_FILE', 
-            choices: ['test_login.py', 'test_products.py', 'test_checkout_individual.py', 'test_e2e_order.py'], 
-            description: '3. Agar RUN_MODE "By_Specific_File" hai, toh yahan se apni manpasand file chunein.'
+            choices: [
+                'test_product_api.py', 
+                'test_register_api.py', 
+                'test_cart.py', 
+                'test_checkout.py', 
+                'test_e2e_order.py', 
+                'test_invalid_login.py', 
+                'test_login.py', 
+                'test_logout.py', 
+                'test_products.py', 
+                'test_register_existing.py', 
+                'test_register.py'
+            ], 
+            description: 'Individual File Selection (Used when RUN_MODE is "By_Specific_File").'
         )
     }
 
-    // 🔒 2. ENVIRONMENT VARIABLES (Naam ditto same jo Python code mein use honge)
+    // ENVIRONMENT VARIABLES
     environment {
         REPORT_NAME     = "master_automation_report.html"
-        
-        // 📝 Normal Variables (Automatic Jenkins back-end par create kar dega)
-        BASE_URL        = "https://qa-environment.com"
+        BASE_URL        = "https://automationexercise.com"
         TEST_USER_EMAIL = "tester_alpha@gmail.com"
-        TEST_USER_NAME  = "Alpha Tester"
+        TEST_USER_NAME  = "Bimalesh Kumar"
         
-        // 🔒 Secret Password (Jo aapne Jenkins Credentials Manager mein 'MY_SECRET_PASSWORD' ID se save kiya tha)
+        // Credentials binding mapping from Jenkins Credentials Manager
         DB_PASSWORD     = credentials('MY_SECRET_PASSWORD') 
     }
 
     stages {
-        // 📥 STAGE 1: GitHub se automatic latest code uthana
+        //Code Pull from Git
         stage('Checkout Code') {
             steps {
-                echo "Workspace saaf karke GitHub se fresh code pull ho raha hai..."
+                echo "Cleaning workspace and fetching fresh code from GitHub..."
                 cleanWs()
                 checkout scm
             }
         }
 
-        // 🛠️ STAGE 2: Python environment, Libraries aur Playwright Setup karna
+        // Environment Provisioning
         stage('Setup Virtual Environment') {
             steps {
-                echo "Python Virtual Environment aur Browsers install ho rahe hain..."
+                echo "Installing Python Dependencies and Playwright System Binaries..."
                 bat '''
                     python -m venv .venv
                     call .venv\\Scripts\\activate
@@ -56,40 +64,36 @@ pipeline {
             }
         }
 
-        // 🏎️ STAGE 3: ASLI EXECUTION (Dono variables aur dropdowns ka combinations)
+        //Smart Execution Logic
         stage('Execute Automation Tests') {
             steps {
                 script {
-                    // CONDITION A: Agar Suite Type chuna hai (UI, API, ya Full Regression)
+                    // CONDITION A: Suite Executions
                     if (params.RUN_MODE == 'By_Suite_Type') {
                         
-                        // 1. Pura Blast (UI + API Regression) -> Dono Folders target honge bina kisi tag ke
                         if (params.SELECT_SUITE == 'full_regression') {
-                            echo "🚀 RUNNING FULL REGRESSION: Scanning complete UI and API folders..."
+                            echo " RUNNING FULL REGRESSION: UI + API Suites..."
                             bat """
                                 call .venv\\Scripts\\activate
                                 pytest Test_Case/test_ui/ Test_Case/test_api/ -v -s --html=Reports/${REPORT_NAME} --self-contained-html
                             """
                         }
-                        // 2. Sirf UI ka folder run karna
                         else if (params.SELECT_SUITE == 'only_ui') {
-                            echo "🌐 RUNNING ONLY UI SUITE (Browser Testing)..."
+                            echo "RUNNING ONLY UI REGRESSION SUITE..."
                             bat """
                                 call .venv\\Scripts\\activate
                                 pytest Test_Case/test_ui/ -v -s --html=Reports/${REPORT_NAME} --self-contained-html
                             """
                         }
-                        // 3. Sirf API ka folder run karna (Bina Browser, super fast)
                         else if (params.SELECT_SUITE == 'only_api') {
-                            echo "🔌 RUNNING ONLY API SUITE (Backend Testing)..."
+                            echo "RUNNING ONLY API REGRESSION SUITE..."
                             bat """
                                 call .venv\\Scripts\\activate
                                 pytest Test_Case/test_api/ -v -s --html=Reports/${REPORT_NAME} --self-contained-html
                             """
                         }
-                        // 4. Smoke tests jo bikhre hue hain tags ke sahare
                         else {
-                            echo "🚬 RUNNING CRITICAL SMOKE TESTS..."
+                            echo "RUNNING CRITICAL SMOKE TAGS..."
                             bat """
                                 call .venv\\Scripts\\activate
                                 pytest Test_Case/ -m smoke -v -s --html=Reports/${REPORT_NAME} --self-contained-html
@@ -97,23 +101,34 @@ pipeline {
                         }
                     } 
                     
-                    // CONDITION B: Agar dropdown se koi ek specific individual file select ki hai
+                    // CONDITION B: Individual File Executions with Dynamic Path Router
                     else {
-                        echo "🎯 RUNNING SINGLE MODULE FILE: ${params.SELECT_FILE}"
-                        bat """
-                            call .venv\\Scripts\\activate
-                            pytest Test_Case/test_ui/${params.SELECT_FILE} -v -s --html=Reports/${REPORT_NAME} --self-contained-html
-                        """
+                        echo "Target File Selected: ${params.SELECT_FILE}"
+                        
+                        // Smart check to see if the chosen file belongs to API or UI folder
+                        if (params.SELECT_FILE.contains('_api.py')) {
+                            echo "Routing execution context to API directory..."
+                            bat """
+                                call .venv\\Scripts\\activate
+                                pytest Test_Case/test_api/${params.SELECT_FILE} -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                            """
+                        } else {
+                            echo "Routing execution context to UI directory..."
+                            bat """
+                                call .venv\\Scripts\\activate
+                                pytest Test_Case/test_ui/${params.SELECT_FILE} -v -s --html=Reports/${REPORT_NAME} --self-contained-html
+                            """
+                        }
                     }
                 }
             }
         }
     }
 
-    // 📊 STAGE 4: Test khatam hone ke baad HTML report automatic Jenkins page par chipkana
+    //HTML Reports Publishing onto Dashboard Dashboard
     post {
         always {
-            echo "Master HTML Report Jenkins dashboard par publish ho rahi hai..."
+            echo "Publishing Execution Reports onto Jenkins Dashboard View..."
             publishHTML(target: [
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
