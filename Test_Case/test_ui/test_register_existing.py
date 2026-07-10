@@ -6,7 +6,7 @@ from Utilities.Read_Env import ReadEnv
 
 @pytest.mark.ui
 class TestRegisterExistingEmail:
-
+    #Register existing email
     def test_register_with_existing_email_error(self, ui_page):
         page, logger = ui_page
 
