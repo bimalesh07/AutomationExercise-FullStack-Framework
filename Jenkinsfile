@@ -36,9 +36,7 @@ pipeline {
         BASE_URL        = "https://automationexercise.com"
         TEST_USER_EMAIL = "tester_alpha@gmail.com"
         TEST_USER_NAME  = "Bimalesh Kumar"
-        
-        // Credentials from Jenkins Credentials Manager
-        DB_PASSWORD = credentials('MY_SECRET_PASSWORD') 
+        DB_PASSWORD     = "Bimalesh@2026" 
     }
 
     stages {
@@ -78,55 +76,32 @@ pipeline {
         stage('Execute Automation Tests') {
             steps {
                 script {
-                    //Suite Executions
                     if (params.RUN_MODE == 'By_Suite_Type') {
-                        
                         if (params.SELECT_SUITE == 'full_regression') {
                             echo " RUNNING FULL REGRESSION: UI + API Suites..."
-                            bat """
-                                call .venv\\Scripts\\activate
-                                pytest Test_Case/test_ui/ Test_Case/test_api/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
-                            """
+                            bat "call .venv\\Scripts\\activate && pytest Test_Case/test_ui/ Test_Case/test_api/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html"
                         }
                         else if (params.SELECT_SUITE == 'only_ui') {
                             echo "RUNNING ONLY UI REGRESSION SUITE..."
-                            bat """
-                                call .venv\\Scripts\\activate
-                                pytest Test_Case/test_ui/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
-                            """
+                            bat "call .venv\\Scripts\\activate && pytest Test_Case/test_ui/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html"
                         }
                         else if (params.SELECT_SUITE == 'only_api') {
                             echo "RUNNING ONLY API REGRESSION SUITE..."
-                            bat """
-                                call .venv\\Scripts\\activate
-                                pytest Test_Case/test_api/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
-                            """
+                            bat "call .venv\\Scripts\\activate && pytest Test_Case/test_api/ -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html"
                         }
                         else {
                             echo "RUNNING CRITICAL SMOKE TAGS..."
-                            bat """
-                                call .venv\\Scripts\\activate
-                                pytest Test_Case/ -m smoke -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
-                            """
+                            bat "call .venv\\Scripts\\activate && pytest Test_Case/ -m smoke -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html"
                         }
                     } 
-                    
-                    //Individual File Executions
                     else {
                         echo "Target File Selected: ${params.SELECT_FILE}"
-                        
                         if (params.SELECT_FILE.contains('_api.py')) {
                             echo "Routing execution context to API directory..."
-                            bat """
-                                call .venv\\Scripts\\activate
-                                pytest Test_Case/test_api/${params.SELECT_FILE} -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
-                            """
+                            bat "call .venv\\Scripts\\activate && pytest Test_Case/test_api/${params.SELECT_FILE} -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html"
                         } else {
                             echo "Routing execution context to UI directory..."
-                            bat """
-                                call .venv\\Scripts\\activate
-                                pytest Test_Case/test_ui/${params.SELECT_FILE} -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html
-                            """
+                            bat "call .venv\\Scripts\\activate && pytest Test_Case/test_ui/${params.SELECT_FILE} -v -s --html=Reports/${env.REPORT_NAME} --self-contained-html"
                         }
                     }
                 }
@@ -137,15 +112,15 @@ pipeline {
     // HTML Reports Publishing onto Dashboard
     post {
         always {
-            node {
+            script {
                 echo "Publishing Execution Reports onto Jenkins Dashboard View..."
                 
-                //DELETE TEMPORARY .env FILE safely inside disk workspace
+                // DELETE TEMPORARY .env FILE safely inside disk workspace
                 bat 'if exist .env del /f /q .env'
                 echo ".env file safely removed from workspace."
                 
                 publishHTML(target: [
-                    allowMissing: false,
+                    allowMissing: true,
                     alwaysLinkToLastBuild: true,
                     keepAll: true,
                     reportDir: 'Reports',
