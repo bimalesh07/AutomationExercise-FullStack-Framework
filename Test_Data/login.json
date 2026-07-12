@@ -1,0 +1,31 @@
+[
+  {
+    "scenario": "Valid Login",
+    "email": "bimlaesh@gmail.com",
+    "password": "123456bky",
+    "expected_result": "success",
+    "expected_message": ""
+  },
+  {
+    "scenario": "Invalid Password",
+    "email": "bimlaesh@gmail.com",
+    "password": "wrong_password_xyz",
+    "expected_result": "fail",
+    "expected_message": "Your email or password is incorrect!"
+  },
+
+  {
+    "scenario": "Empty Email and Password",
+    "email": "",
+    "password": "",
+    "expected_result": "fail",
+    "expected_message": "Fields cannot be empty"
+  },
+  {
+    "scenario": "SQL Injection Attack Attempt",
+    "email": "' OR '1'='1",
+    "password": "password123",
+    "expected_result": "fail",
+    "expected_message": "Invalid email format"
+  }
+]

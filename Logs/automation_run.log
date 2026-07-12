@@ -196,3 +196,47 @@
 2026-07-10 15:55:17 - [INFO] - Triggering API 5: Searching product for keyword -> tshirt
 2026-07-10 15:55:17 - [INFO] - Triggering API 5: Searching product for keyword -> None
 2026-07-10 15:55:18 - [INFO] - Tearing down Backend API Context
+2026-07-12 22:52:56 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-12 22:53:19 - [INFO] -  ********* Start DDT Test: Scenario: Valid Login ***********
+2026-07-12 22:53:19 - [INFO] - ************Navigate loging Page ********
+2026-07-12 22:53:20 - [INFO] - **********login Page start ***************
+2026-07-12 22:53:21 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-12 22:53:21 - [INFO] - Valid Login Scenario Passed!
+2026-07-12 22:53:21 - [INFO] - ******************DDT TEST ARE COMPLETED**************************
+2026-07-12 22:53:21 - [INFO] - Closing Browser Tab
+2026-07-12 22:53:21 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-12 22:53:27 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Password ***********
+2026-07-12 22:53:27 - [INFO] - ************Navigate loging Page ********
+2026-07-12 22:53:28 - [INFO] - **********login Page start ***************
+2026-07-12 22:53:28 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-12 22:53:28 - [INFO] - ********Error message invlid password and username ******
+2026-07-12 22:53:33 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data1]. Taking screenshot...
+2026-07-12 22:53:34 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-12 22:53:34 - [INFO] - Closing Browser Tab
+2026-07-12 22:53:34 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-12 22:53:38 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Email ***********
+2026-07-12 22:53:38 - [INFO] - ************Navigate loging Page ********
+2026-07-12 22:53:38 - [INFO] - **********login Page start ***************
+2026-07-12 22:53:39 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-12 22:53:39 - [INFO] - ********Error message invlid password and username ******
+2026-07-12 22:53:44 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data2]. Taking screenshot...
+2026-07-12 22:53:44 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-12 22:53:44 - [INFO] - Closing Browser Tab
+2026-07-12 22:53:44 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-12 22:53:48 - [INFO] -  ********* Start DDT Test: Scenario: Empty Email and Password ***********
+2026-07-12 22:53:48 - [INFO] - ************Navigate loging Page ********
+2026-07-12 22:53:49 - [INFO] - **********login Page start ***************
+2026-07-12 22:53:49 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-12 22:53:49 - [INFO] - ********Error message invlid password and username ******
+2026-07-12 22:53:54 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data3]. Taking screenshot...
+2026-07-12 22:53:54 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-12 22:53:54 - [INFO] - Closing Browser Tab
+2026-07-12 22:53:54 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-12 22:53:59 - [INFO] -  ********* Start DDT Test: Scenario: SQL Injection Attack Attempt ***********
+2026-07-12 22:53:59 - [INFO] - ************Navigate loging Page ********
+2026-07-12 22:54:00 - [INFO] - **********login Page start ***************
+2026-07-12 22:54:00 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-12 22:54:00 - [INFO] - ********Error message invlid password and username ******
+2026-07-12 22:54:05 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data4]. Taking screenshot...
+2026-07-12 22:54:05 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-12 22:54:05 - [INFO] - Closing Browser Tab

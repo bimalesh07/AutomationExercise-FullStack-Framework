@@ -9,7 +9,7 @@ logger = CustomLogger.get_logger()
 
 @pytest.fixture(scope="function")
 def ui_page():
-    logger.info("[UI FIXTURE] Opening Isolated Browser Tab Context")
+    logger.info("Opening Isolated Browser Tab Context")
     playwright_instance = sync_playwright().start()
     base_ui_url = ReadEnv.get_base_url()
     
@@ -20,10 +20,11 @@ def ui_page():
     
     yield page, logger 
     
-    logger.info("[UI FIXTURE] Closing Browser Tab")
+    logger.info("Closing Browser Tab")
     context.close()
     browser.close()
     playwright_instance.stop()
+
 
 
 #Login 
@@ -43,13 +44,6 @@ def logged_in_page(ui_page):
     yield page, logger
 
     logger.info("Cleaning up session ")
-
-
-
-
-
-
-
 
 
 
