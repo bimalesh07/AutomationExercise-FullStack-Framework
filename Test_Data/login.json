@@ -20,7 +20,7 @@
     "password": "",
     "is_valid": false,
     "error_type": "browser",
-    "error_element": "#password",
+    "error_element": "[data-qa='login-password']",
     "expected_message": "Please fill out this field."
   },
   {
@@ -29,7 +29,7 @@
     "password": "password123",
     "is_valid": false,
     "error_type": "browser",
-    "error_element": "#email",
+    "error_element": "[data-qa='login-email']",
     "expected_message": "Please include an '@' in the email address. 'hhhh' is missing an '@'."
   }
 ]

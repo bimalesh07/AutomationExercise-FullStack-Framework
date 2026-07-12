@@ -240,3 +240,158 @@
 2026-07-12 22:54:05 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data4]. Taking screenshot...
 2026-07-12 22:54:05 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
 2026-07-12 22:54:05 - [INFO] - Closing Browser Tab
+2026-07-13 00:02:08 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:02:24 - [INFO] -  ********* Start DDT Test: Scenario: Valid Login ***********
+2026-07-13 00:02:24 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:02:24 - [INFO] - **********login Page start ***************
+2026-07-13 00:02:26 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:02:26 - [INFO] - Valid Login Scenario Passed!
+2026-07-13 00:02:26 - [INFO] - Closing Browser Tab
+2026-07-13 00:02:26 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:02:36 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Password ***********
+2026-07-13 00:02:36 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:02:37 - [INFO] - **********login Page start ***************
+2026-07-13 00:02:37 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:02:37 - [INFO] - ********Error message invlid password and username ******
+2026-07-13 00:02:38 - [INFO] - Red Page Error Verified for: Invalid Password
+2026-07-13 00:02:38 - [INFO] - Closing Browser Tab
+2026-07-13 00:02:38 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:02:47 - [INFO] -  ********* Start DDT Test: Scenario: Only Password Empty ***********
+2026-07-13 00:02:47 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:02:48 - [INFO] - **********login Page start ***************
+2026-07-13 00:02:48 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:03:18 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data2]. Taking screenshot...
+2026-07-13 00:03:18 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:03:18 - [INFO] - Closing Browser Tab
+2026-07-13 00:03:19 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:03:25 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Email Format ***********
+2026-07-13 00:03:25 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:03:25 - [INFO] - **********login Page start ***************
+2026-07-13 00:03:25 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:03:56 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data3]. Taking screenshot...
+2026-07-13 00:03:56 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:03:56 - [INFO] - Closing Browser Tab
+2026-07-13 00:09:18 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:09:22 - [INFO] -  ********* Start DDT Test: Scenario: Valid Login ***********
+2026-07-13 00:09:22 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:09:22 - [INFO] - **********login Page start ***************
+2026-07-13 00:09:23 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:09:23 - [INFO] - Valid Login Scenario Passed!
+2026-07-13 00:09:23 - [INFO] - Closing Browser Tab
+2026-07-13 00:09:24 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:09:27 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Password ***********
+2026-07-13 00:09:27 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:09:28 - [INFO] - **********login Page start ***************
+2026-07-13 00:09:28 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:09:28 - [INFO] - ********Error message invlid password and username ******
+2026-07-13 00:09:28 - [INFO] - Red Page Error Verified for: Invalid Password
+2026-07-13 00:09:28 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data1]. Taking screenshot...
+2026-07-13 00:09:29 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:09:29 - [INFO] - Closing Browser Tab
+2026-07-13 00:09:29 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:09:33 - [INFO] -  ********* Start DDT Test: Scenario: Only Password Empty ***********
+2026-07-13 00:09:33 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:09:34 - [INFO] - **********login Page start ***************
+2026-07-13 00:09:34 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:09:39 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data2]. Taking screenshot...
+2026-07-13 00:09:40 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:09:40 - [INFO] - Closing Browser Tab
+2026-07-13 00:09:40 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:09:44 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Email Format ***********
+2026-07-13 00:09:44 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:09:44 - [INFO] - **********login Page start ***************
+2026-07-13 00:09:44 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:09:50 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data3]. Taking screenshot...
+2026-07-13 00:09:50 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:09:50 - [INFO] - Closing Browser Tab
+2026-07-13 00:12:48 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:12:52 - [INFO] -  ********* Start DDT Test: Scenario: Valid Login ***********
+2026-07-13 00:12:52 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:12:53 - [INFO] - **********login Page start ***************
+2026-07-13 00:12:54 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:12:54 - [INFO] - Valid Login Scenario Passed!
+2026-07-13 00:12:54 - [INFO] - Closing Browser Tab
+2026-07-13 00:12:54 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:12:59 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Password ***********
+2026-07-13 00:12:59 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:13:00 - [INFO] - **********login Page start ***************
+2026-07-13 00:13:01 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:13:01 - [INFO] - ********Error message invlid password and username ******
+2026-07-13 00:13:01 - [INFO] - Red Page Error Verified for: Invalid Password
+2026-07-13 00:13:01 - [INFO] - Closing Browser Tab
+2026-07-13 00:13:01 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:13:05 - [INFO] -  ********* Start DDT Test: Scenario: Only Password Empty ***********
+2026-07-13 00:13:05 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:13:05 - [INFO] - **********login Page start ***************
+2026-07-13 00:13:05 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:13:36 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data2]. Taking screenshot...
+2026-07-13 00:13:36 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:13:36 - [INFO] - Closing Browser Tab
+2026-07-13 00:13:36 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:13:42 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Email Format ***********
+2026-07-13 00:13:42 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:13:42 - [INFO] - **********login Page start ***************
+2026-07-13 00:13:42 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:14:12 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data3]. Taking screenshot...
+2026-07-13 00:14:13 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:14:13 - [INFO] - Closing Browser Tab
+2026-07-13 00:17:46 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:17:50 - [INFO] -  ********* Start DDT Test: Scenario: Valid Login ***********
+2026-07-13 00:17:50 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:17:51 - [INFO] - **********login Page start ***************
+2026-07-13 00:17:53 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:17:53 - [INFO] - Valid Login Scenario Passed!
+2026-07-13 00:17:53 - [INFO] - Closing Browser Tab
+2026-07-13 00:17:53 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:17:59 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Password ***********
+2026-07-13 00:17:59 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:17:59 - [INFO] - **********login Page start ***************
+2026-07-13 00:18:00 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:18:00 - [INFO] - ********Error message invlid password and username ******
+2026-07-13 00:18:00 - [INFO] - Red Page Error Verified for: Invalid Password
+2026-07-13 00:18:00 - [INFO] - Closing Browser Tab
+2026-07-13 00:18:00 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:18:04 - [INFO] -  ********* Start DDT Test: Scenario: Only Password Empty ***********
+2026-07-13 00:18:04 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:18:04 - [INFO] - **********login Page start ***************
+2026-07-13 00:18:04 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:18:06 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data2]. Taking screenshot...
+2026-07-13 00:18:06 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:18:06 - [INFO] - Closing Browser Tab
+2026-07-13 00:18:07 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:18:11 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Email Format ***********
+2026-07-13 00:18:11 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:18:12 - [INFO] - **********login Page start ***************
+2026-07-13 00:18:12 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:18:13 - [INFO] - [UI REPORT HOOK] Test Failed: test_login_from[data3]. Taking screenshot...
+2026-07-13 00:18:14 - [INFO] - [UI REPORT HOOK] Screenshot attached to HTML report.
+2026-07-13 00:18:14 - [INFO] - Closing Browser Tab
+2026-07-13 00:53:48 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:53:58 - [INFO] -  ********* Start DDT Test: Scenario: Valid Login ***********
+2026-07-13 00:53:58 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:54:00 - [INFO] - **********login Page start ***************
+2026-07-13 00:54:02 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:54:02 - [INFO] - Valid Login Scenario Passed!
+2026-07-13 00:54:02 - [INFO] - Closing Browser Tab
+2026-07-13 00:54:03 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:54:07 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Password ***********
+2026-07-13 00:54:07 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:54:07 - [INFO] - **********login Page start ***************
+2026-07-13 00:54:08 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:54:08 - [INFO] - ********Error message invlid password and username ******
+2026-07-13 00:54:08 - [INFO] - Red Page Error Verified for: Invalid Password
+2026-07-13 00:54:08 - [INFO] - Closing Browser Tab
+2026-07-13 00:54:08 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:54:13 - [INFO] -  ********* Start DDT Test: Scenario: Only Password Empty ***********
+2026-07-13 00:54:13 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:54:13 - [INFO] - **********login Page start ***************
+2026-07-13 00:54:13 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:54:13 - [INFO] - Browser Tooltip Verified for: Only Password Empty
+2026-07-13 00:54:13 - [INFO] - Closing Browser Tab
+2026-07-13 00:54:14 - [INFO] - Opening Isolated Browser Tab Context
+2026-07-13 00:54:19 - [INFO] -  ********* Start DDT Test: Scenario: Invalid Email Format ***********
+2026-07-13 00:54:19 - [INFO] - ************Navigate loging Page ********
+2026-07-13 00:54:21 - [INFO] - **********login Page start ***************
+2026-07-13 00:54:23 - [INFO] - **************Sucessfully Loin Completed ******
+2026-07-13 00:54:23 - [INFO] - Browser Tooltip Verified for: Invalid Email Format
+2026-07-13 00:54:23 - [INFO] - Closing Browser Tab
