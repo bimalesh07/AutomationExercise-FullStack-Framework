@@ -71,8 +71,6 @@ class TestUserRegistrationAPI:
 
     #LOGIN VALIDATIONS
     def test_api_verify_login_with_valid_details(self, user_api):
-        """API 7: POST To Verify Login with valid details (Positive Scenario)"""
-        # Ek common default email jo framework testing ke liye use ho sake
         response = user_api.verify_login(email="bimalesh@test.com", password="password123")
         assert response.status in [200, 403]
         if response.status == 200:

@@ -8,22 +8,14 @@ from PageObjects.Login_Page import LoginPage
 logger = CustomLogger.get_logger()
 
 @pytest.fixture(scope="function")
-def ui_page():
-    logger.info("Opening Isolated Browser Tab Context")
-    playwright_instance = sync_playwright().start()
+def ui_page(page):
+    logger.info("Opening Isolated Browser Tab Context via Native Fixture")
+    
     base_ui_url = ReadEnv.get_base_url()
-    
-    browser = playwright_instance.chromium.launch(headless=False)
-    context = browser.new_context()
-    page = context.new_page()
-    page.goto(base_ui_url)
-    
+    page.goto(base_ui_url, wait_until="load")
+
     yield page, logger 
-    
-    logger.info("Closing Browser Tab")
-    context.close()
-    browser.close()
-    playwright_instance.stop()
+    logger.info("Closing Browser")
 
 
 
@@ -79,3 +71,26 @@ def pytest_runtest_makereport(item, call):
                 extra.append(pytest_html.extras.image(screenshot_path))
                 report.extra = extra
                 logger.info(f"[UI REPORT HOOK] Screenshot attached to HTML report.")
+
+
+
+
+
+#This is manualy start
+# @pytest.fixture(scope="function")
+# def ui_page():
+#     logger.info("Opening Isolated Browser Tab Context")
+#     playwright_instance = sync_playwright().start()
+#     base_ui_url = ReadEnv.get_base_url()
+    
+#     browser = playwright_instance.chromium.launch(headless=False)
+#     context = browser.new_context()
+#     page = context.new_page()
+#     page.goto(base_ui_url)
+    
+#     yield page, logger 
+    
+#     logger.info("Closing Browser Tab")
+#     context.close()
+#     browser.close()
+#     playwright_instance.stop()
