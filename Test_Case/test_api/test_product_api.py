@@ -1,8 +1,6 @@
 import pytest
-
 @pytest.mark.api
 class TestProductIndividualAPIs:
-
     def test_api_get_all_products_list(self, product_api):
         response = product_api.get_all_product()
         if response.status == 200:
